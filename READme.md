@@ -34,3 +34,23 @@ so make sure you have two arguements for the two parameters that are passed.
 *DEFAULT PARAMETERS*: passing an empty arguement would get the parameter inside the function printed
 
 *RETURN statement*:
+
+
+
+************3RD CLASS*************
+
+*REGUALR EXPRESSION*
+Adding + extracts the text being put in separate commas.
+without the plus puts the desired characters in commas separatly
+[\d] helps eliminate / show just digits. it can be done in two ways, either \d or 0-9.
+[^ ]brings out white space and symbols as well make sure to add the space
+[a-z] extracts just small letters.
+[A-Z ]extracts capital letters
+[a-zA-Z] extracts both capital and small letters.
+[.*] extracts everything in between, from the begining of the text all the way to the particular letters required.
+While [.] just extracts the words that have just one letter in between.
+While [.ld] extracts the words that end with 'ld' but with the leter before it.
+(.findall) is for extracting particular words or letters
+r'a{3}' for the text on lines (28-31) prints out all the a's that are grouped in 3s when you use the findall.
+*re.sub* is for substitutes the pattern with another word in the re.sub(---). to do that after selecting the pwrd you want to change, you put it in the pattern (), then for the re.sub(pattern, replacement_word, text)
+*Split functions* splits the text into words and separates it with commas
